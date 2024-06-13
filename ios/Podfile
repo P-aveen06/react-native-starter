@@ -23,6 +23,8 @@ target 'starter' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'MSAL'
+
   target 'starterTests' do
     inherit! :complete
     # Pods for testing

@@ -13,7 +13,7 @@ function HomeScreen({navigation}:any){
     return(
         <View style={styles.container}>
         <Text style={styles.text}>Hello, welcome home kindly fill your profile details</Text>
-        <Image style={styles.image} source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}/>
+        {/* <Image style={styles.image} source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}/> */}
         <Text style={styles.nameBox}>Name :</Text>
         <TextInput style={styles.inputBox} placeholder='May have your name' value={inputValue} onChangeText={value=>setInputValue(value)}/>
         {/* {query.data&&<Text style={styles.title}>{query.data.title}</Text>} */}

@@ -1,13 +1,14 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { NativeModules, StyleSheet, Text, View } from 'react-native'
 
 function ProfileScreen({navigation,route}:any) {
+  const {OneviewAuth}=NativeModules
+  console.log(OneviewAuth)
   return (
     <View style={styles.greetingContainer}>
         <Text style={styles.greeting}>Hello, {route.params.name}</Text>
     </View>
   )
-
 }
 const styles=StyleSheet.create({
     greetingContainer:{
